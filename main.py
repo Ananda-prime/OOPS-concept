@@ -36,6 +36,28 @@ class Supermarket:
 product1 = Supermarket("gold")
 product1.myfunc()
 
+# Inheritance
+'''Has Relationship of inheritance'''
+class AC:
+    def aircool(self):
+        print("cooling")
+class Speaker:
+    def sound(self):
+        print("hearing")
+class car:
+
+    def __init__(self):
+        self.volats = AC()
+        self.sony = Speaker()
+
+'''Nano has AC , Nano has Sepaker'''
+nano = car()
+print(nano.sony.sound())
+print(nano.volats.aircool())
+
+'''IS Relationship of inheritance'''
+
+
 
 
 
