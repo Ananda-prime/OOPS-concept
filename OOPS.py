@@ -37,7 +37,8 @@ product1 = Supermarket("gold")
 product1.myfunc()
 
 # Inheritance
-'''Has Relationship of inheritance'''
+'''Has Relationship of inheritance (composition without existing
+outer container, there is no inner container)'''
 class AC:
     def aircool(self):
         print("cooling")
@@ -57,7 +58,22 @@ print(nano.volats.aircool())
 
 '''IS Relationship of inheritance'''
 
+class Telephone:
+    def call(self):
+        pass
+    def callerid(self):
+        pass
 
+class mobile(Telephone):
+    def message(self):
+        print("AAA")
+        pass
+    def roam(self):
+        pass
+
+samsung = mobile()
+print(samsung.call())
+print(samsung.message())
 
 
 
