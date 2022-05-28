@@ -1,0 +1,50 @@
+Types of Arguments:
+
+def fun(n1, n2):
+    return n1+n2
+print(fun(100,200))
+
+n1,n2 --> Formal Arguments/Parameters
+100,200 --> Actual Arguments
+
+Types of Actual Arugments(4):
+1. Positional Arguments
+(n1=100, n2=200)
+def fun(n1, n2):
+    return n1+n2
+print(fun(100,200))
+
+
+2. Keywords Arguments
+["with keyword we are giving value", "order of args can be changed"]
+def add(n1, n2):
+    print(n1-n2)
+add(n1=100, n2=200) \ add(n2=100,n1=200) 
+
+3. Default Arguments
+
+def login(name="admin"):
+    print(name, "logged in")
+login()
+login("user")
+
+4. Variable Length Arguments
+
+def add(*no):
+    total = 0
+    for n in no:
+        total = total + n
+    print(total)
+add(100,200,300)
+
+
+
+
+
+
+
+
+
+
+
+
